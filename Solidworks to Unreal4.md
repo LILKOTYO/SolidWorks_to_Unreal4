@@ -4,12 +4,13 @@
 
 ## 转化格式为`.FBX`
 
-`.STL文件`导入到**3DS MAX**中，然后导出为`.FBX文件`，然后直接导入到UE4中。
+将机器人模型从**SolidWorks**中导出，格式为`.SLDPRT工程文件`，然后将其导入到**3DS MAX**中。
+
+在下一步导入到UE4之前，需要对模型进行建立骨骼和蒙皮等操作，详见文件`before import.md`，[链接](https://github.com/LILKOTYO/SolidWorks_to_Unreal4/blob/master/before%20import.md)
 
 > 发现问题：
 >
-> * 复杂`.STL文件`模型导入到**3DS MAX**中不可以选择自动连接等选项，模型可能会被大幅简化；
-> * 复杂模型（例如`base_link.fbx`)导入到UE4时会卡死。  
+> * 导入时间较长，复杂模型导入到UE4时会卡死。  
 
 
 
